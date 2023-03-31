@@ -1,2 +1,37 @@
 ec2 instance
-connecting to 
+connecting with mobaxterm
+$ sudo su 
+$ cd /opt
+$ yum install java
+$ java -version
+$ wget <https://dlcdn.apache.org/maven/maven-3/3.9.1/binaries/apache-maven-3.9.1-bin.tar.gz>
+$ ls
+unzip file
+$ tar -xzvf <maven file>
+$ cd <apache-maven file>
+$ls
+$ cd bin
+$ vi ~/.bash_profile
+inside need to add PATH
+#################################################
+# .bash_profile
+
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+        . ~/.bashrc
+fi
+
+# User specific environment and startup programs
+M2_HOME=/opt/apache-maven-3.9.0
+M2=/opt/apache-maven-3.9.0/bin
+PATH=$PATH:$M2_HOME:$M2
+
+export PATH
+##########################################################
+ESC:wq             
+$echo "$PATH"
+$source ~/.bash_profile
+$echo '$PATH"
+
+$ mvn --version or mvn -version
+$  
